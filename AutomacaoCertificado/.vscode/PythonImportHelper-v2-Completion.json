@@ -1,0 +1,53 @@
+[
+    {
+        "label": "openpyxl",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openpyxl",
+        "description": "openpyxl",
+        "detail": "openpyxl",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFont",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "workbook_alunos",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "workbook_alunos = openpyxl.load_workbook('planilha_alunos.xlsx')\nsheet_alunos = workbook_alunos['Sheet1']\n# Iterar sobre as linhas da planilha\nfor indice, linha in enumerate(sheet_alunos.iter_rows(min_row=2, max_row=3)):\n    # Informações de cada célula\n    nome_curso = linha[0].value\n    nome_participante = linha[1].value\n    tipo_participacao = linha[2].value\n    carga_horaria = linha[5].value\n    data_inicio = linha[3].value",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sheet_alunos",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "sheet_alunos = workbook_alunos['Sheet1']\n# Iterar sobre as linhas da planilha\nfor indice, linha in enumerate(sheet_alunos.iter_rows(min_row=2, max_row=3)):\n    # Informações de cada célula\n    nome_curso = linha[0].value\n    nome_participante = linha[1].value\n    tipo_participacao = linha[2].value\n    carga_horaria = linha[5].value\n    data_inicio = linha[3].value\n    data_final = linha[4].value",
+        "detail": "app",
+        "documentation": {}
+    }
+]
